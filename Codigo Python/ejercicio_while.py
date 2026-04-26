@@ -14,40 +14,45 @@ la contraseña. Al final del programa se mostrarán tanto el nombre y la contras
 '''
 def usuario():
     nomUsuario = input("Introduce un nombre de usuario: ")
-    nomUsuario = str(nomUsuario)
+    #nomUsuario = str(nomUsuario)
     return nomUsuario
 
 def contrasena():
     numContrasena = input("\nIntroduce la contraseña: ")
-    numContrasena = str(numContrasena)
+    #numContrasena = str(numContrasena)
     print("\n***********************************************************")
     return numContrasena
 
+def comprobarContraseña():
+    validarContraseña = False
+
+
+    while (validarContraseña == False):
+        contrasenaInicial=contrasena()
+        minusculas = [letra for letra in contrasenaInicial if letra.islower()]
+        mayusculas = [letra for letra in contrasenaInicial if letra.isupper()]
+        numero = [letra for letra in contrasenaInicial if letra.isdigit()]
+        if len (contrasenaInicial)<8 or len(minusculas)<1 or len(mayusculas)<1 or len(numero)<1:
+            print("La longitud de tu contraseña es : "+ str(len(contrasenaInicial)))
+            print("La cantidad de MINISCULAS en tu contraseña es : "+str (len(minusculas)))
+            print("La cantidad de MAYUSCULAS en tu contraseña es : "+str (len(mayusculas)))
+            print("La cantidad de NUMEROS en tu contraseña es : "+str (len(numero)))
+            print("\nCONTRASEÑA INCORRECTA, VUELVE A INTRODUCIR LA CONTRASEÑA")
+            print("************************************************************")
+
+        else:
+            validarContraseña=True
+            print("TU CONTRASEÑA SE HA AÑADIDO CORRECTAMENTE")
+            return contrasenaInicial
+
+  
 print("**********************INICIA*********************")
 
 
 usuarioInicial=usuario()
 #contrasenaInicial=contrasena()
 
-validarContraseña = False
-
-
-while (validarContraseña == False):
-    contrasenaInicial=contrasena()
-    minusculas = [letra for letra in contrasenaInicial if letra.islower()]
-    mayusculas = [letra for letra in contrasenaInicial if letra.isupper()]
-    numero = [letra for letra in contrasenaInicial if letra.isdigit()]
-    if len (contrasenaInicial)<8 or len(minusculas)<1 or len(mayusculas)<1 or len(numero)<1:
-        print("La longitud de tu contraseña es : "+ str(len(contrasenaInicial)))
-        print("La cantidad de MINISCULAS en tu contraseña es : "+str (len(minusculas)))
-        print("La cantidad de MAYUSCULAS en tu contraseña es : "+str (len(mayusculas)))
-        print("La cantidad de NUMEROS en tu contraseña es : "+str (len(numero)))
-        print("\nCONTRASEÑA INCORRECTA, VUELVE A INTRODUCIR LA CONTRASEÑA")
-        print("************************************************************")
-
-    else:
-        validarContraseña=True
-        print("TU CONTRASEÑA SE HA AÑADIDO CORRECTAMENTE")
+primerContraseña=comprobarContraseña()
 
     #tamano= len (contrasenaInicial)
     #minisculas = [char for char in contrasenaInicial if char.islower()]
@@ -56,15 +61,36 @@ while (validarContraseña == False):
     #contrasenaInicial=contrasena()
 print("fin de bucle")
 print("\nUsuario: "+usuarioInicial)
-print("\nContraseña: "+contrasenaInicial)
+print("\nContraseña: "+primerContraseña)
 
 usuarioOriginal = usuarioInicial
-contrasenaOriginal = contrasenaInicial
+contrasenaOriginal = primerContraseña
 
 print("\n*************************MENU*************************")
  
+opcion = input("¿Quieres modificar algun dato introducido?\nn: Modificar Usuario\nc: Modificar Contraseña\nt: Modificar Usuario y Contraseña\n").lower()
 
+match opcion:
+    case "n":
+        usuarioInicial = usuario()
+        usuarioNuevo = usuarioInicial
+        print("Tu anterior usuario era: "+usuarioOriginal+"\nTu nuevo usuario es: "+usuarioNuevo)
+        
+    case "c":
+        nuevaContrasena = comprobarContraseña()
+        ultimaContrasena = nuevaContrasena
+        print("Tu anterior contraseña era: "+contrasenaOriginal+"\nTu nueva contraseña es: "+nuevaContrasena)
 
+    case "t":
+        usuarioInicial = usuario()
+        usuarioNuevo = usuarioInicial
+        nuevaContrasena = comprobarContraseña()
+        ultimaContrasena = nuevaContrasena
+        print("\nTu anterior usuario era: "+usuarioOriginal+"\nTu nuevo usuario es: "+usuarioNuevo)
+        print("Tu anterior contraseña era: "+contrasenaOriginal+"\nTu nueva contraseña es: "+nuevaContrasena)
+
+    case _:
+        print("OPCION NO VALIDA")
 
 #print("Su primer usuario era : "+ primerUsuario +"\nSu primera contraseña era : " +primerContrasena)
 
