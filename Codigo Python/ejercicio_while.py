@@ -73,20 +73,20 @@ opcion = input("¿Quieres modificar algun dato introducido?\nn: Modificar Usuari
 match opcion:
     case "n":
         usuarioInicial = usuario()
-        usuarioNuevo = usuarioInicial
-        print("Tu anterior usuario era: "+usuarioOriginal+"\nTu nuevo usuario es: "+usuarioNuevo)
+        #usuarioNuevo = usuarioInicial
+        print("Tu anterior usuario era: "+usuarioOriginal+"\nTu nuevo usuario es: "+usuarioInicial)
         
     case "c":
         nuevaContrasena = comprobarContraseña()
-        ultimaContrasena = nuevaContrasena
+        #ultimaContrasena = nuevaContrasena
         print("Tu anterior contraseña era: "+contrasenaOriginal+"\nTu nueva contraseña es: "+nuevaContrasena)
 
     case "t":
         usuarioInicial = usuario()
-        usuarioNuevo = usuarioInicial
+        #usuarioNuevo = usuarioInicial
         nuevaContrasena = comprobarContraseña()
-        ultimaContrasena = nuevaContrasena
-        print("\nTu anterior usuario era: "+usuarioOriginal+"\nTu nuevo usuario es: "+usuarioNuevo)
+        #ultimaContrasena = nuevaContrasena
+        print("\nTu anterior usuario era: "+usuarioOriginal+"\nTu nuevo usuario es: "+usuarioInicial)
         print("Tu anterior contraseña era: "+contrasenaOriginal+"\nTu nueva contraseña es: "+nuevaContrasena)
 
     case _:
