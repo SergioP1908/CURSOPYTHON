@@ -29,10 +29,8 @@ def contrasena():
             print("\n***********************************************************")
             return numContrasena
 
-def comprobarContrasena():
+def comprobarContrasena(): #Valida la contraseña , si no tiene mas de 8 letras, que tenga 1 minus, 1 Mayus y 1 numero
     validarContrasena = False
-
-
     while (validarContrasena == False):
         contrasenaInicial=contrasena()
         minusculas = [letra for letra in contrasenaInicial if letra.islower()]
@@ -54,10 +52,10 @@ def comprobarContrasena():
   
 print("**********************INICIA*********************")
 
-
+#EJECUTA EL CODIGO PIDIENDO EL NOMBRE
 usuarioInicial=usuario()
 #contrasenaInicial=contrasena()
-
+#EJECUTA EL CODIGO PIDIENDO LA CONTRASEÑA Y VALIDANDOLA
 primerContrasena=comprobarContrasena()
 
     #tamano= len (contrasenaInicial)
