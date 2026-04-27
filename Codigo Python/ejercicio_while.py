@@ -13,21 +13,27 @@ la contraseña. Al final del programa se mostrarán tanto el nombre y la contras
 
 '''
 def usuario():
-    nomUsuario = input("Introduce un nombre de usuario: ")
-    #nomUsuario = str(nomUsuario)
-    return nomUsuario
+    while True:
+        nomUsuario = input("Introduce un nombre de usuario: ").strip()
+        if nomUsuario == "":
+            print("El usuario no puede estar vacío. Inténtalo de nuevo.")
+        else:
+            return nomUsuario
 
 def contrasena():
-    numContrasena = input("\nIntroduce la contraseña: ")
-    #numContrasena = str(numContrasena)
-    print("\n***********************************************************")
-    return numContrasena
+    while True:
+        numContrasena = input("\nIntroduce la contraseña: ").strip()
+        if numContrasena == "":
+            print("La contraseña no puede estar vacía.")
+        else:
+            print("\n***********************************************************")
+            return numContrasena
 
-def comprobarContraseña():
-    validarContraseña = False
+def comprobarContrasena():
+    validarContrasena = False
 
 
-    while (validarContraseña == False):
+    while (validarContrasena == False):
         contrasenaInicial=contrasena()
         minusculas = [letra for letra in contrasenaInicial if letra.islower()]
         mayusculas = [letra for letra in contrasenaInicial if letra.isupper()]
@@ -52,19 +58,19 @@ print("**********************INICIA*********************")
 usuarioInicial=usuario()
 #contrasenaInicial=contrasena()
 
-primerContraseña=comprobarContraseña()
+primerContrasena=comprobarContrasena()
 
     #tamano= len (contrasenaInicial)
     #minisculas = [char for char in contrasenaInicial if char.islower()]
     #cuantasmin = len(minisculas)
     #print(str(cuantasmin))
     #contrasenaInicial=contrasena()
-print("fin de bucle")
+#print("fin de bucle")
 print("\nUsuario: "+usuarioInicial)
-print("\nContraseña: "+primerContraseña)
+print("\nContraseña: "+primerContrasena)
 
 usuarioOriginal = usuarioInicial
-contrasenaOriginal = primerContraseña
+contrasenaOriginal = primerContrasena
 
 print("\n*************************MENU*************************")
  
@@ -77,14 +83,14 @@ match opcion:
         print("Tu anterior usuario era: "+usuarioOriginal+"\nTu nuevo usuario es: "+usuarioInicial)
         
     case "c":
-        nuevaContrasena = comprobarContraseña()
+        nuevaContrasena = comprobarContrasena()
         #ultimaContrasena = nuevaContrasena
         print("Tu anterior contraseña era: "+contrasenaOriginal+"\nTu nueva contraseña es: "+nuevaContrasena)
 
     case "t":
         usuarioInicial = usuario()
         #usuarioNuevo = usuarioInicial
-        nuevaContrasena = comprobarContraseña()
+        nuevaContrasena = comprobarContrasena()
         #ultimaContrasena = nuevaContrasena
         print("\nTu anterior usuario era: "+usuarioOriginal+"\nTu nuevo usuario es: "+usuarioInicial)
         print("Tu anterior contraseña era: "+contrasenaOriginal+"\nTu nueva contraseña es: "+nuevaContrasena)
