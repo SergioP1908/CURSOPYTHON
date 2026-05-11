@@ -1,0 +1,30 @@
+52362548A	Laura Rodriguez	32	Calleja, 25	Madrid	916549684	25-2-1989	15-02-2007
+36254147Z	Jorge Escribano	56	Posada, 45	Teruel	604785324	24-5-1978	26-4-2010
+02568424X	Jaime Lorenzo	14	Ejercito, 27	Guadalajara	665845126	13-5-1996	23-6-2013
+63325691K	Sofia Rosales	19	Avd. Prado, 2	Salamanca	919645465	12-4-1978	15-8-2012
+69352158D	Luisa Mercero	26 	Peñarroya, 34	Madrid	916541565	3-9-1964	2-6-2000
+36995215Y	Javier Melero	75	Laguna, 45	Malaga	667654654	9-4-1989	23-9-2009
+52456854H 	Sonia Lopez	24	Cuesta, 56	Toledo	687654654	26-10-1999	8-1-2001
+36236948T	Alicia Forner	32	Moscu, 32	Toledo	942654694	 	3-5-1989
+32698542H	Jose Mariano	26	Alpedrete, 1	Toledo	941654654	 	4-7-2008
+02545875L	Juan Boadella	25	Matadero, 34	Soria	953654544	 	8-7-2005
+69582364S	Pedro Martos	52	Cadiz, 34	Soria	626544141	 	25-10-2006
+39565875P	Ivanka Saries	19	Martorell, 34	Soria	626544165	 	3-9-1995
+75623658G	Emilia Vazquez	35	Benavides, 23	Soria	952654564	 	9-12-2008
+33652158F	Elvira Benart	37	Plaza Real, 23	Soria	635645655	 	9-7-2010
+01254875K	Carlos Ruiz	49	Eslovaquia, 12	Soria	669654146	 	3-11-2004
+78542564A	Victor Alamo	56	Mineria, 32	Oviedo	985546565	 	5-8-2011
+22569584E	Antonio Diaz	56	Astorga, 12	Oviedo	986964565	 	6-12-1999
+36452685S	Almudena Santos	24	Ferrocarril, 2	Gijon	695191496	 	5-7-2003
+68476544T	Francisco Moles	82	Cantabria, 34	Gijon	654611544	 	23-5-2009
+65746454Q	Oscar Quintana	23	Austrias, 45	Madrid	919832165	 	3-6-2011
+96265154P	Monica Santos	25	Vinateros, 12	Madrid	916655285	 	23-7-2009
+65467651E	Enrique Rubio	15	La Estrella, 9	Madrid	636546544	 	5-9-2006
+52125245D	Felix Aragones	65	Usera, 56	Madrid	916546541	 	9-12-2001
+50149641W	Sergio Sanchez	41	Puerta Sol, 12	Madrid	636584654	 	30-6-2010
+65469395V	Rafael Miño	52	Albarracin, 6	Jaen	953654647	 	9-4-2000
+36254256S	Camilo Beriyan	49	Granadero, 56	Jaen	665416441	 	3-9-1998
+68769425O	Arancha Yuste	38	Albufera, 3	Valencia	946519441	 	7-6-1994
+12451257F	Patricia Sanz	29	Conseller, 2	Valencia	956546514	 	16-5-2007
+42654644M	Luis Gonzalez	24	Pallarols, 67	Valencia	623165643	 	7-10-2008
+01245785F	Samuel Jurado	58	Alborada, 12	Valencia	696546518	 	9-2-2000
