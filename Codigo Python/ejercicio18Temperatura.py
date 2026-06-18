@@ -60,7 +60,7 @@ for fila in filas:
     elif promedio<20:
         clima= "frio"
 
-    print(clima)
+    #print(clima)
 # HACER EL UPDATE EN LA BASE DE DATOS PARA TEMP_MEDIA Y CLASIFICACION
     query_update = "UPDATE verano SET temp_media = "+str(promedio)+ " WHERE fecha = '"+str(fecha_registro)+"';"
     query_update_clima = "UPDATE verano SET clasificacion = '"+clima+ "' WHERE fecha = '"+str(fecha_registro)+"';"
